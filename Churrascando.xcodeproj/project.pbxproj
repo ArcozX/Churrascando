@@ -1,0 +1,481 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6529E2B1219CDB4B0044805F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6529E2B0219CDB4B0044805F /* AppDelegate.swift */; };
+		6529E2B3219CDB4B0044805F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6529E2B2219CDB4B0044805F /* ViewController.swift */; };
+		6529E2B6219CDB4B0044805F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6529E2B4219CDB4B0044805F /* Main.storyboard */; };
+		6529E2B9219CDB4B0044805F /* Churrascando.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6529E2B7219CDB4B0044805F /* Churrascando.xcdatamodeld */; };
+		6529E2BB219CDB4C0044805F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6529E2BA219CDB4C0044805F /* Assets.xcassets */; };
+		6529E2BE219CDB4C0044805F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6529E2BC219CDB4C0044805F /* LaunchScreen.storyboard */; };
+		6529E2C9219CDB4C0044805F /* ChurrascandoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6529E2C8219CDB4C0044805F /* ChurrascandoTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6529E2C5219CDB4C0044805F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6529E2A5219CDB4B0044805F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6529E2AC219CDB4B0044805F;
+			remoteInfo = Churrascando;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		6529E2AD219CDB4B0044805F /* Churrascando.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Churrascando.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6529E2B0219CDB4B0044805F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		6529E2B2219CDB4B0044805F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		6529E2B5219CDB4B0044805F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6529E2B8219CDB4B0044805F /* Churrascando.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Churrascando.xcdatamodel; sourceTree = "<group>"; };
+		6529E2BA219CDB4C0044805F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6529E2BD219CDB4C0044805F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6529E2BF219CDB4C0044805F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6529E2C4219CDB4C0044805F /* ChurrascandoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChurrascandoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6529E2C8219CDB4C0044805F /* ChurrascandoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChurrascandoTests.swift; sourceTree = "<group>"; };
+		6529E2CA219CDB4C0044805F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6529E2AA219CDB4B0044805F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6529E2C1219CDB4C0044805F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6529E2A4219CDB4B0044805F = {
+			isa = PBXGroup;
+			children = (
+				6529E2AF219CDB4B0044805F /* Churrascando */,
+				6529E2C7219CDB4C0044805F /* ChurrascandoTests */,
+				6529E2AE219CDB4B0044805F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6529E2AE219CDB4B0044805F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6529E2AD219CDB4B0044805F /* Churrascando.app */,
+				6529E2C4219CDB4C0044805F /* ChurrascandoTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6529E2AF219CDB4B0044805F /* Churrascando */ = {
+			isa = PBXGroup;
+			children = (
+				6529E2B0219CDB4B0044805F /* AppDelegate.swift */,
+				6529E2B2219CDB4B0044805F /* ViewController.swift */,
+				6529E2B4219CDB4B0044805F /* Main.storyboard */,
+				6529E2BA219CDB4C0044805F /* Assets.xcassets */,
+				6529E2BC219CDB4C0044805F /* LaunchScreen.storyboard */,
+				6529E2BF219CDB4C0044805F /* Info.plist */,
+				6529E2B7219CDB4B0044805F /* Churrascando.xcdatamodeld */,
+			);
+			path = Churrascando;
+			sourceTree = "<group>";
+		};
+		6529E2C7219CDB4C0044805F /* ChurrascandoTests */ = {
+			isa = PBXGroup;
+			children = (
+				6529E2C8219CDB4C0044805F /* ChurrascandoTests.swift */,
+				6529E2CA219CDB4C0044805F /* Info.plist */,
+			);
+			path = ChurrascandoTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6529E2AC219CDB4B0044805F /* Churrascando */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6529E2CD219CDB4C0044805F /* Build configuration list for PBXNativeTarget "Churrascando" */;
+			buildPhases = (
+				6529E2A9219CDB4B0044805F /* Sources */,
+				6529E2AA219CDB4B0044805F /* Frameworks */,
+				6529E2AB219CDB4B0044805F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Churrascando;
+			productName = Churrascando;
+			productReference = 6529E2AD219CDB4B0044805F /* Churrascando.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6529E2C3219CDB4C0044805F /* ChurrascandoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6529E2D0219CDB4C0044805F /* Build configuration list for PBXNativeTarget "ChurrascandoTests" */;
+			buildPhases = (
+				6529E2C0219CDB4C0044805F /* Sources */,
+				6529E2C1219CDB4C0044805F /* Frameworks */,
+				6529E2C2219CDB4C0044805F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6529E2C6219CDB4C0044805F /* PBXTargetDependency */,
+			);
+			name = ChurrascandoTests;
+			productName = ChurrascandoTests;
+			productReference = 6529E2C4219CDB4C0044805F /* ChurrascandoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6529E2A5219CDB4B0044805F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = "Daniel Maia Alves";
+				TargetAttributes = {
+					6529E2AC219CDB4B0044805F = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+					6529E2C3219CDB4C0044805F = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = 6529E2AC219CDB4B0044805F;
+					};
+				};
+			};
+			buildConfigurationList = 6529E2A8219CDB4B0044805F /* Build configuration list for PBXProject "Churrascando" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6529E2A4219CDB4B0044805F;
+			productRefGroup = 6529E2AE219CDB4B0044805F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6529E2AC219CDB4B0044805F /* Churrascando */,
+				6529E2C3219CDB4C0044805F /* ChurrascandoTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6529E2AB219CDB4B0044805F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6529E2BE219CDB4C0044805F /* LaunchScreen.storyboard in Resources */,
+				6529E2BB219CDB4C0044805F /* Assets.xcassets in Resources */,
+				6529E2B6219CDB4B0044805F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6529E2C2219CDB4C0044805F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6529E2A9219CDB4B0044805F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6529E2B9219CDB4B0044805F /* Churrascando.xcdatamodeld in Sources */,
+				6529E2B3219CDB4B0044805F /* ViewController.swift in Sources */,
+				6529E2B1219CDB4B0044805F /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6529E2C0219CDB4C0044805F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6529E2C9219CDB4C0044805F /* ChurrascandoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6529E2C6219CDB4C0044805F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6529E2AC219CDB4B0044805F /* Churrascando */;
+			targetProxy = 6529E2C5219CDB4C0044805F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		6529E2B4219CDB4B0044805F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6529E2B5219CDB4B0044805F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		6529E2BC219CDB4C0044805F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6529E2BD219CDB4C0044805F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6529E2CB219CDB4C0044805F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		6529E2CC219CDB4C0044805F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6529E2CE219CDB4C0044805F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Churrascando/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.danielmaiaalves.Churrascando;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6529E2CF219CDB4C0044805F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Churrascando/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.danielmaiaalves.Churrascando;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		6529E2D1219CDB4C0044805F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ChurrascandoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.danielmaiaalves.ChurrascandoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Churrascando.app/Churrascando";
+			};
+			name = Debug;
+		};
+		6529E2D2219CDB4C0044805F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ChurrascandoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.danielmaiaalves.ChurrascandoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Churrascando.app/Churrascando";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6529E2A8219CDB4B0044805F /* Build configuration list for PBXProject "Churrascando" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6529E2CB219CDB4C0044805F /* Debug */,
+				6529E2CC219CDB4C0044805F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6529E2CD219CDB4C0044805F /* Build configuration list for PBXNativeTarget "Churrascando" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6529E2CE219CDB4C0044805F /* Debug */,
+				6529E2CF219CDB4C0044805F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6529E2D0219CDB4C0044805F /* Build configuration list for PBXNativeTarget "ChurrascandoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6529E2D1219CDB4C0044805F /* Debug */,
+				6529E2D2219CDB4C0044805F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		6529E2B7219CDB4B0044805F /* Churrascando.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				6529E2B8219CDB4B0044805F /* Churrascando.xcdatamodel */,
+			);
+			currentVersion = 6529E2B8219CDB4B0044805F /* Churrascando.xcdatamodel */;
+			path = Churrascando.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 6529E2A5219CDB4B0044805F /* Project object */;
+}
