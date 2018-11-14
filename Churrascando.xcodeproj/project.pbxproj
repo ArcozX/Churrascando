@@ -14,6 +14,8 @@
 		6529E2BB219CDB4C0044805F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6529E2BA219CDB4C0044805F /* Assets.xcassets */; };
 		6529E2BE219CDB4C0044805F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6529E2BC219CDB4C0044805F /* LaunchScreen.storyboard */; };
 		6529E2C9219CDB4C0044805F /* ChurrascandoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6529E2C8219CDB4C0044805F /* ChurrascandoTests.swift */; };
+		9DA1F256C62631AE1F35A3A8 /* Pods_ChurrascandoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB3BB4923E7CAD480CA813FE /* Pods_ChurrascandoTests.framework */; };
+		A70BB17F84DDBB9665145F12 /* Pods_Churrascando.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E172E11A6A2F4F6B1B49C9BD /* Pods_Churrascando.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +29,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4AF18FDA84417F4C60095BC8 /* Pods-Churrascando.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Churrascando.release.xcconfig"; path = "Pods/Target Support Files/Pods-Churrascando/Pods-Churrascando.release.xcconfig"; sourceTree = "<group>"; };
 		6529E2AD219CDB4B0044805F /* Churrascando.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Churrascando.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6529E2B0219CDB4B0044805F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6529E2B2219CDB4B0044805F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -38,6 +41,11 @@
 		6529E2C4219CDB4C0044805F /* ChurrascandoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChurrascandoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6529E2C8219CDB4C0044805F /* ChurrascandoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChurrascandoTests.swift; sourceTree = "<group>"; };
 		6529E2CA219CDB4C0044805F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9DE378B4506ADE0242DE3A45 /* Pods-Churrascando.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Churrascando.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Churrascando/Pods-Churrascando.debug.xcconfig"; sourceTree = "<group>"; };
+		B4CBF58CC4DCF492022285DB /* Pods-ChurrascandoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChurrascandoTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ChurrascandoTests/Pods-ChurrascandoTests.debug.xcconfig"; sourceTree = "<group>"; };
+		CD4446E5C5052135C337CEDB /* Pods-ChurrascandoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChurrascandoTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ChurrascandoTests/Pods-ChurrascandoTests.release.xcconfig"; sourceTree = "<group>"; };
+		E172E11A6A2F4F6B1B49C9BD /* Pods_Churrascando.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Churrascando.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB3BB4923E7CAD480CA813FE /* Pods_ChurrascandoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ChurrascandoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A70BB17F84DDBB9665145F12 /* Pods_Churrascando.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -52,18 +61,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9DA1F256C62631AE1F35A3A8 /* Pods_ChurrascandoTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3160130900EC1545FCB1854B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E172E11A6A2F4F6B1B49C9BD /* Pods_Churrascando.framework */,
+				EB3BB4923E7CAD480CA813FE /* Pods_ChurrascandoTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		6529E2A4219CDB4B0044805F = {
 			isa = PBXGroup;
 			children = (
 				6529E2AF219CDB4B0044805F /* Churrascando */,
 				6529E2C7219CDB4C0044805F /* ChurrascandoTests */,
 				6529E2AE219CDB4B0044805F /* Products */,
+				C46F908D80704202D3F57AFF /* Pods */,
+				3160130900EC1545FCB1854B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,6 +120,17 @@
 			path = ChurrascandoTests;
 			sourceTree = "<group>";
 		};
+		C46F908D80704202D3F57AFF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9DE378B4506ADE0242DE3A45 /* Pods-Churrascando.debug.xcconfig */,
+				4AF18FDA84417F4C60095BC8 /* Pods-Churrascando.release.xcconfig */,
+				B4CBF58CC4DCF492022285DB /* Pods-ChurrascandoTests.debug.xcconfig */,
+				CD4446E5C5052135C337CEDB /* Pods-ChurrascandoTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -106,6 +138,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6529E2CD219CDB4C0044805F /* Build configuration list for PBXNativeTarget "Churrascando" */;
 			buildPhases = (
+				BB257FA58BFC04349B255B0E /* [CP] Check Pods Manifest.lock */,
 				6529E2A9219CDB4B0044805F /* Sources */,
 				6529E2AA219CDB4B0044805F /* Frameworks */,
 				6529E2AB219CDB4B0044805F /* Resources */,
@@ -123,6 +156,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6529E2D0219CDB4C0044805F /* Build configuration list for PBXNativeTarget "ChurrascandoTests" */;
 			buildPhases = (
+				E5C53AC2FF63B8C8910C415E /* [CP] Check Pods Manifest.lock */,
 				6529E2C0219CDB4C0044805F /* Sources */,
 				6529E2C1219CDB4C0044805F /* Frameworks */,
 				6529E2C2219CDB4C0044805F /* Resources */,
@@ -194,6 +228,53 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		BB257FA58BFC04349B255B0E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Churrascando-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E5C53AC2FF63B8C8910C415E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ChurrascandoTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		6529E2A9219CDB4B0044805F /* Sources */ = {
@@ -360,6 +441,7 @@
 		};
 		6529E2CE219CDB4C0044805F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9DE378B4506ADE0242DE3A45 /* Pods-Churrascando.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -377,6 +459,7 @@
 		};
 		6529E2CF219CDB4C0044805F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4AF18FDA84417F4C60095BC8 /* Pods-Churrascando.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -394,6 +477,7 @@
 		};
 		6529E2D1219CDB4C0044805F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B4CBF58CC4DCF492022285DB /* Pods-ChurrascandoTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -414,6 +498,7 @@
 		};
 		6529E2D2219CDB4C0044805F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CD4446E5C5052135C337CEDB /* Pods-ChurrascandoTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
