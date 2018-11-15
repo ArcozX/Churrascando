@@ -9,22 +9,32 @@
         <relationship name="items" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Item" inverseName="barbecues" inverseEntity="Item" syncable="YES"/>
     </entity>
     <entity name="Invited" representedClassName="Invited" syncable="YES" codeGenerationType="class">
-        <attribute name="email" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="consumeDrink" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="contemplated" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="contemplatingList" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
         <attribute name="gender" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="id" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
         <attribute name="isChildren" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="isVegetarian" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="paid" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="payingAmount" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="payingFor" optional="YES" attributeType="Transformable" syncable="YES"/>
         <relationship name="barbecues" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Barbecue" inverseName="invited" inverseEntity="Barbecue" syncable="YES"/>
     </entity>
     <entity name="Item" representedClassName="Item" syncable="YES" codeGenerationType="class">
-        <attribute name="amount" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="amount" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="category" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
         <attribute name="cost" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
         <attribute name="image" optional="YES" attributeType="Transformable" syncable="YES"/>
+        <attribute name="isDrink" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="isMeat" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
         <relationship name="barbecues" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Barbecue" inverseName="items" inverseEntity="Barbecue" syncable="YES"/>
     </entity>
     <elements>
-        <element name="Barbecue" positionX="-63" positionY="-18" width="128" height="135"/>
-        <element name="Invited" positionX="-54" positionY="18" width="128" height="120"/>
-        <element name="Item" positionX="-36" positionY="45" width="128" height="120"/>
+        <element name="Barbecue" positionX="-218" positionY="45" width="128" height="135"/>
+        <element name="Invited" positionX="-11" positionY="-36" width="128" height="223"/>
+        <element name="Item" positionX="-11" positionY="135" width="128" height="163"/>
     </elements>
 </model>
