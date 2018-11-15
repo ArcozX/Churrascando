@@ -103,13 +103,11 @@
 		6529E2AF219CDB4B0044805F /* Churrascando */ = {
 			isa = PBXGroup;
 			children = (
-				6529E2B0219CDB4B0044805F /* AppDelegate.swift */,
-				6529E2B2219CDB4B0044805F /* ViewController.swift */,
-				6529E2B4219CDB4B0044805F /* Main.storyboard */,
-				6529E2BA219CDB4C0044805F /* Assets.xcassets */,
-				6529E2BC219CDB4C0044805F /* LaunchScreen.storyboard */,
 				6529E2BF219CDB4C0044805F /* Info.plist */,
-				6529E2B7219CDB4B0044805F /* Churrascando.xcdatamodeld */,
+				6529E2BA219CDB4C0044805F /* Assets.xcassets */,
+				6529E2DC219D0E520044805F /* Model */,
+				6529E2D9219D0DDD0044805F /* View */,
+				6529E2DB219D0DFB0044805F /* Controller */,
 			);
 			path = Churrascando;
 			sourceTree = "<group>";
@@ -129,6 +127,40 @@
 				6529E2D7219D09C70044805F /* update-version.sh */,
 			);
 			path = "Support Files";
+			sourceTree = "<group>";
+		};
+		6529E2D9219D0DDD0044805F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6529E2DA219D0DEC0044805F /* Storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		6529E2DA219D0DEC0044805F /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				6529E2B4219CDB4B0044805F /* Main.storyboard */,
+				6529E2BC219CDB4C0044805F /* LaunchScreen.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		6529E2DB219D0DFB0044805F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				6529E2B0219CDB4B0044805F /* AppDelegate.swift */,
+				6529E2B2219CDB4B0044805F /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		6529E2DC219D0E520044805F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				6529E2B7219CDB4B0044805F /* Churrascando.xcdatamodeld */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		C46F908D80704202D3F57AFF /* Pods */ = {
