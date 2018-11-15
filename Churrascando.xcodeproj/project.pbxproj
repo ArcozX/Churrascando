@@ -14,6 +14,7 @@
 		6529E2BB219CDB4C0044805F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6529E2BA219CDB4C0044805F /* Assets.xcassets */; };
 		6529E2BE219CDB4C0044805F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6529E2BC219CDB4C0044805F /* LaunchScreen.storyboard */; };
 		6529E2C9219CDB4C0044805F /* ChurrascandoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6529E2C8219CDB4C0044805F /* ChurrascandoTests.swift */; };
+		6529E2D8219D09C70044805F /* update-version.sh in Resources */ = {isa = PBXBuildFile; fileRef = 6529E2D7219D09C70044805F /* update-version.sh */; };
 		9DA1F256C62631AE1F35A3A8 /* Pods_ChurrascandoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB3BB4923E7CAD480CA813FE /* Pods_ChurrascandoTests.framework */; };
 		A70BB17F84DDBB9665145F12 /* Pods_Churrascando.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E172E11A6A2F4F6B1B49C9BD /* Pods_Churrascando.framework */; };
 /* End PBXBuildFile section */
@@ -41,6 +42,7 @@
 		6529E2C4219CDB4C0044805F /* ChurrascandoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChurrascandoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6529E2C8219CDB4C0044805F /* ChurrascandoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChurrascandoTests.swift; sourceTree = "<group>"; };
 		6529E2CA219CDB4C0044805F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6529E2D7219D09C70044805F /* update-version.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = "update-version.sh"; sourceTree = "<group>"; };
 		9DE378B4506ADE0242DE3A45 /* Pods-Churrascando.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Churrascando.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Churrascando/Pods-Churrascando.debug.xcconfig"; sourceTree = "<group>"; };
 		B4CBF58CC4DCF492022285DB /* Pods-ChurrascandoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChurrascandoTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ChurrascandoTests/Pods-ChurrascandoTests.debug.xcconfig"; sourceTree = "<group>"; };
 		CD4446E5C5052135C337CEDB /* Pods-ChurrascandoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChurrascandoTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ChurrascandoTests/Pods-ChurrascandoTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -83,6 +85,7 @@
 				6529E2AF219CDB4B0044805F /* Churrascando */,
 				6529E2C7219CDB4C0044805F /* ChurrascandoTests */,
 				6529E2AE219CDB4B0044805F /* Products */,
+				6529E2D6219D09780044805F /* Support Files */,
 				C46F908D80704202D3F57AFF /* Pods */,
 				3160130900EC1545FCB1854B /* Frameworks */,
 			);
@@ -120,6 +123,14 @@
 			path = ChurrascandoTests;
 			sourceTree = "<group>";
 		};
+		6529E2D6219D09780044805F /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				6529E2D7219D09C70044805F /* update-version.sh */,
+			);
+			path = "Support Files";
+			sourceTree = "<group>";
+		};
 		C46F908D80704202D3F57AFF /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -142,6 +153,7 @@
 				6529E2A9219CDB4B0044805F /* Sources */,
 				6529E2AA219CDB4B0044805F /* Frameworks */,
 				6529E2AB219CDB4B0044805F /* Resources */,
+				6529E2D5219D089E0044805F /* Set Build Number */,
 			);
 			buildRules = (
 			);
@@ -214,6 +226,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6529E2D8219D09C70044805F /* update-version.sh in Resources */,
 				6529E2BE219CDB4C0044805F /* LaunchScreen.storyboard in Resources */,
 				6529E2BB219CDB4C0044805F /* Assets.xcassets in Resources */,
 				6529E2B6219CDB4B0044805F /* Main.storyboard in Resources */,
@@ -230,6 +243,20 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		6529E2D5219D089E0044805F /* Set Build Number */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Set Build Number";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "sh \"Support Files/update-version.sh\"";
+		};
 		BB257FA58BFC04349B255B0E /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;

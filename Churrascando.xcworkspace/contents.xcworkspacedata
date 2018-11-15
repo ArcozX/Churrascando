@@ -7,4 +7,11 @@
    <FileRef
       location = "group:Pods/Pods.xcodeproj">
    </FileRef>
+   <Group
+      location = "group:Support Files"
+      name = "Support Files">
+      <FileRef
+         location = "group:Support Files/update-version.sh">
+      </FileRef>
+   </Group>
 </Workspace>
