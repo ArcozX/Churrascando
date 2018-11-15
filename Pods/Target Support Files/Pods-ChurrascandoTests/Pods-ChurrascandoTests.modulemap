@@ -1,0 +1,6 @@
+framework module Pods_ChurrascandoTests {
+  umbrella header "Pods-ChurrascandoTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
