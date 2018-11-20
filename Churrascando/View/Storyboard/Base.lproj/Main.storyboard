@@ -29,7 +29,7 @@
         <!--Convidados-->
         <scene sceneID="LQm-fs-ixC">
             <objects>
-                <viewController id="3gs-Na-v4r" sceneMemberID="viewController">
+                <viewController id="3gs-Na-v4r" customClass="InvitesViewController" customModule="Churrascando" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="rjJ-gQ-AbF">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -64,8 +64,11 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="tH2-SR-wRu">
+                                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="25" minValue="0.0" maxValue="50" translatesAutoresizingMaskIntoConstraints="NO" id="tH2-SR-wRu">
                                                 <rect key="frame" x="28" y="44" width="310.5" height="31"/>
+                                                <connections>
+                                                    <action selector="setMen:" destination="3gs-Na-v4r" eventType="valueChanged" id="bh1-8J-p3o"/>
+                                                </connections>
                                             </slider>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="＋" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NTh-ge-XF8">
                                                 <rect key="frame" x="344.5" y="45.5" width="22.5" height="26.5"/>
@@ -97,8 +100,11 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="Tri-Tp-yBS">
+                                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="25" minValue="0.0" maxValue="50" translatesAutoresizingMaskIntoConstraints="NO" id="Tri-Tp-yBS">
                                                 <rect key="frame" x="28" y="126" width="311" height="31"/>
+                                                <connections>
+                                                    <action selector="setWomen:" destination="3gs-Na-v4r" eventType="valueChanged" id="FoL-DR-qYL"/>
+                                                </connections>
                                             </slider>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="＋" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qXW-D1-B9X">
                                                 <rect key="frame" x="344.5" y="127" width="22.5" height="26.5"/>
@@ -130,8 +136,11 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="kZC-aF-ovb">
+                                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="25" minValue="0.0" maxValue="50" translatesAutoresizingMaskIntoConstraints="NO" id="kZC-aF-ovb">
                                                 <rect key="frame" x="28" y="208" width="310.5" height="31"/>
+                                                <connections>
+                                                    <action selector="setKids:" destination="3gs-Na-v4r" eventType="valueChanged" id="eGu-X6-DRv"/>
+                                                </connections>
                                             </slider>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="＋" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QQv-8A-1tp">
                                                 <rect key="frame" x="344" y="209" width="22.5" height="26.5"/>
@@ -201,6 +210,14 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="lbKids" destination="Dbb-3Z-ekn" id="XDn-VY-MMx"/>
+                        <outlet property="lbMen" destination="4fu-Hm-6X7" id="wVW-GQ-INg"/>
+                        <outlet property="lbWomen" destination="GKc-4o-tp4" id="yB0-uV-akq"/>
+                        <outlet property="slKids" destination="kZC-aF-ovb" id="m0P-bI-zFh"/>
+                        <outlet property="slMen" destination="tH2-SR-wRu" id="MwI-Ea-0uQ"/>
+                        <outlet property="slWomen" destination="Tri-Tp-yBS" id="Y0E-nr-Lkn"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1hn-co-ENV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

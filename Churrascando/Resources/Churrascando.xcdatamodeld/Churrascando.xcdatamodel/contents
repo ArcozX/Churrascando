@@ -2,12 +2,12 @@
 <model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="14135" systemVersion="17F77" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
     <entity name="Barbecue" representedClassName="Barbecue" syncable="YES" codeGenerationType="class">
         <attribute name="date" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
-        <attribute name="id" optional="YES" attributeType="UUID" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="id" attributeType="UUID" usesScalarValueType="NO" syncable="YES"/>
         <attribute name="image" optional="YES" attributeType="Transformable" syncable="YES"/>
         <attribute name="info" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
-        <relationship name="invited" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Invited" inverseName="barbecues" inverseEntity="Invited" syncable="YES"/>
-        <relationship name="items" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Item" inverseName="barbecues" inverseEntity="Item" syncable="YES"/>
+        <attribute name="name" attributeType="String" syncable="YES"/>
+        <relationship name="invited" optional="YES" toMany="YES" minCount="1" deletionRule="Cascade" destinationEntity="Invited" inverseName="barbecues" inverseEntity="Invited" syncable="YES"/>
+        <relationship name="items" optional="YES" toMany="YES" minCount="1" deletionRule="Nullify" destinationEntity="Item" inverseName="barbecues" inverseEntity="Item" syncable="YES"/>
     </entity>
     <entity name="Invited" representedClassName="Invited" syncable="YES" codeGenerationType="class">
         <attribute name="consumeDrink" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
@@ -24,18 +24,18 @@
         <relationship name="barbecues" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Barbecue" inverseName="invited" inverseEntity="Barbecue" syncable="YES"/>
     </entity>
     <entity name="Item" representedClassName="Item" syncable="YES" codeGenerationType="class">
-        <attribute name="amount" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="amount" optional="YES" attributeType="Float" minValueString="0" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
         <attribute name="category" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
-        <attribute name="cost" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="cost" optional="YES" attributeType="Float" minValueString="0" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
         <attribute name="image" optional="YES" attributeType="Transformable" syncable="YES"/>
-        <attribute name="isDrink" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
-        <attribute name="isMeat" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
-        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="isDrink" optional="YES" attributeType="Boolean" defaultValueString="NO" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="isMeat" optional="YES" attributeType="Boolean" defaultValueString="NO" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="name" attributeType="String" syncable="YES"/>
         <relationship name="barbecues" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Barbecue" inverseName="items" inverseEntity="Barbecue" syncable="YES"/>
     </entity>
     <elements>
-        <element name="Barbecue" positionX="-218" positionY="45" width="128" height="148"/>
+        <element name="Barbecue" positionX="-218" positionY="45" width="128" height="150"/>
         <element name="Invited" positionX="-11" positionY="-36" width="128" height="223"/>
-        <element name="Item" positionX="-11" positionY="135" width="128" height="163"/>
+        <element name="Item" positionX="-11" positionY="135" width="128" height="165"/>
     </elements>
 </model>
