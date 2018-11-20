@@ -108,6 +108,7 @@
 				6529E2DC219D0E520044805F /* Model */,
 				6529E2D9219D0DDD0044805F /* View */,
 				6529E2DB219D0DFB0044805F /* Controller */,
+				6529E2DD21A46AD70044805F /* Resources */,
 			);
 			path = Churrascando;
 			sourceTree = "<group>";
@@ -158,9 +159,16 @@
 		6529E2DC219D0E520044805F /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				6529E2B7219CDB4B0044805F /* Churrascando.xcdatamodeld */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		6529E2DD21A46AD70044805F /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				6529E2B7219CDB4B0044805F /* Churrascando.xcdatamodeld */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 		C46F908D80704202D3F57AFF /* Pods */ = {
